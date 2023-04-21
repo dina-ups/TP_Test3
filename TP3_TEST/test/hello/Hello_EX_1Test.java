@@ -26,4 +26,12 @@ class Hello_EX_1Test {
 		assertEquals(hello.Hello(nom1),res);
 	}
 	
+
+	@Test
+	void test3() {
+		Hello_EX_1 hello=new Hello_EX_1();
+		String nom="BOB";
+		String res= "HELLO, BOB !";
+		assertEquals(hello.Hello(nom),res);
+	}
 }
