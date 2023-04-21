@@ -7,11 +7,23 @@ import org.junit.jupiter.api.Test;
 class Hello_EX_1Test {
 
 	@Test
-	void test() {
+	void test1() {
 		Hello_EX_1 hello=new Hello_EX_1();
 		String nom="Bob";
 		String res= "Hello, "+nom;
 		assertEquals(hello.Hello(nom),res);
 	}
 
+	@Test
+	void test2() {
+		Hello_EX_1 hello=new Hello_EX_1();
+		String nom="";
+		String nom1=null;
+		String nom2="   ";
+		String res= "Hello, my friend";
+		assertEquals(hello.Hello(nom2),res);
+		assertEquals(hello.Hello(nom),res);
+		assertEquals(hello.Hello(nom1),res);
+	}
+	
 }
