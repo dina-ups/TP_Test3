@@ -8,7 +8,10 @@ class Hello_EX_1Test {
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		Hello_EX_1 hello=new Hello_EX_1();
+		String nom="Bob";
+		String res= "Hello, "+nom;
+		assertEquals(hello.Hello(nom),res);
 	}
 
 }
