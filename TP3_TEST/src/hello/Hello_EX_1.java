@@ -12,7 +12,7 @@ public class Hello_EX_1 {
 		{
 			retour.append("my friend");
 		}
-		// Suppression des espaces 
+		// Suppression des espaces inutiles :) 
 		nom = nom.trim().replaceAll("\\s+", " ");
 		String[] nameList = nom.split(",");
 		
@@ -39,7 +39,7 @@ public class Hello_EX_1 {
 						retour.append(nameList[i]);
 					} 
 				}
-			//maj.append("!");
+			//maj.app end("!");
 			retour.append("and");
 			retour.append(nameList[-1]);
 			retour.append(maj);

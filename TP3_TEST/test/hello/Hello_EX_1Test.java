@@ -32,5 +32,10 @@ class Hello_EX_1Test {
 	{
 	assertEquals(Hello_EX_1.affichage("Amy,Bob"),"Hello, Amy, Bob”");
 	}
+	void test5() {
+	assertEquals(Hello_EX_1.affichage("Amy,Bob,Jerry"),"Hello, Amy, Bob, Jerry”");
+	assertEquals(Hello_EX_1.affichage("Amy,Bob,Jerry,Tom,Bambi"),"Hello, Amy, Bob, Jerry, Tom, Bambi");
+	}
+
 
 }
