@@ -7,12 +7,12 @@ public class Hello_EX_1 {
 		StringBuilder maj= new StringBuilder();
 		retour.append("Hello,");
 		maj.append(". AND HELLO,");
-		
+		/////////////
 		if (isempty(nom))
 		{
 			retour.append("my friend");
 		}
-		// Suppression des espaces inutiles :) 
+		// Suppress ion des espaces inutiles :) 
 		nom = nom.trim().replaceAll("\\s+", " ");
 		String[] nameList = nom.split(",");
 		
@@ -25,7 +25,7 @@ public class Hello_EX_1 {
 				}
 			retour.append(nameList[0]);
 		}
-		
+		///////
 		else 
 		{
 			for (int i=0;i<(nameList.length)-1;i++) 
