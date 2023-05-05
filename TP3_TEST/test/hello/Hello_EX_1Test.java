@@ -28,5 +28,9 @@ class Hello_EX_1Test {
 	assertEquals(Hello_EX_1.affichage("JERRY"),"HELLO, JERRY");
 	}
 
+	void test4() 
+	{
+	assertEquals(Hello_EX_1.affichage("Amy,Bob"),"Hello, Amy, Bob”");
+	}
 
 }
