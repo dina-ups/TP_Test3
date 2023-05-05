@@ -6,32 +6,15 @@ import org.junit.jupiter.api.Test;
 
 class Hello_EX_1Test {
 
+	@BeforeEach
+	public void initialisation()
+	{
+	System.out.println("Lancement des tests");
+
+	}
 	@Test
 	void test1() {
-		Hello_EX_1 hello=new Hello_EX_1();
-		String nom="Bob";
-		String res= "Hello, "+nom;
-		assertEquals(hello.Hello(nom),res);
+	assertEquals(Hello_EX_1.affichage("bob"),"Hello,bob");
 	}
 
-	@Test
-	void test2() {
-		Hello_EX_1 hello=new Hello_EX_1();
-		String nom="";
-		String nom1=null;
-		String nom2="   ";
-		String res= "Hello, my friend";
-		assertEquals(hello.Hello(nom2),res);
-		assertEquals(hello.Hello(nom),res);
-		assertEquals(hello.Hello(nom1),res);
-	}
-	
-
-	@Test
-	void test3() {
-		Hello_EX_1 hello=new Hello_EX_1();
-		String nom="BOB";
-		String res= "HELLO, BOB !";
-		assertEquals(hello.Hello(nom),res);
-	}
 }
